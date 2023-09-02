@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://i1.wp.com/windowscustomization.com/wp-content/uploads/2019/01/2200-Hours.gif?resize=600%2C354&quality=80&strip=all&ssl=1");
+    background-position: center;
+    background-size: cover;
+   border: 5px solid black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.user-card {
+    position: relative;
+    top:50px;
+    background:linear-gradient(white,black,red);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px auto;
+    height: max-content;
+    max-width: 300px;
+    
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.user-card:hover {
+    background:linear-gradient(rgb(214, 16, 49),pink,black);
+    transform: rotate(360deg);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    position: relative;
+    left:15vh;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+h2 {
+    color:chocolate;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 5px 0;
+    display: flex;
+    color:wheat
+
+}
+
+/* Bold and fixed size for headings */
+.user-card p span.heading {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* CSS Grid for responsive layout */
+.user-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .user-card {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Styling for expanded card */
+.user-card.expanded {
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Additional styling for expanded card */
+.user-card.expanded .details {
+    grid-column: span 2;
+}
+#fetchUser{
+
+    background-color:rgb(202, 146, 41);
+    color:rgb(15, 15, 15);
+    text-decoration: none;
+    font-weight: 50px;
+    margin: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 4px;
+    cursor: pointer;
+    display: grid;
+    text-align: center;
+    position: relative;
+     top:60px;
+     left:550px;
+    font-size: 20px;
+}
+#fetchUser:hover{
+    background-color: chocolate;
+}
